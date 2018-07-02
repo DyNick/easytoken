@@ -1,0 +1,128 @@
+mixin extra-services-mini(header, title, body)
+	div.extra-services-mini.tabs-card
+		div.extra-services-mini__inner
+			div.extra-services-mini__header
+				span.extra-services-mini__header__from from
+				span.extra-services-mini__header__price #{header}
+				span.extra-services-mini__header__val USD
+			div.extra-services-mini__title.tabs-card__title #{title}
+			div.extra-services-mini__description #{body}
+		div.extra-services-mini__hover
+			a.extra-services-mini__hover__button.extra-services-click(href='#') choose
+
+mixin section-costs()
+
+	section#cost.section.section-costs
+		div.icetab-container#icetab-container
+			div.icetab.current-tab.icetab--left costs of developing private cabinet for ICO
+			div.icetab.icetab--right extra services
+		div.container.container--tabs
+			div#icetab-content
+				div.tabcontent.tab-active
+					div.container-inner.container-inner--first-tab
+						div.column--two-items.column--two-items-first-tab.bounceInLeft.animatable
+							div.tabs-card
+								div.tabs-card__header $12000
+								div.tabs-card__image
+									img(src='img/main-page/section-costs/cost-image.png')
+								div.tabs-card__title ICO investor’s and admin dashboard
+								ul.tabs-card__list
+									li.tabs-card__list__item
+										img(src='img/main-page/section-costs/cost-icon.png')
+										span Payments with cryptocurrencies and bank cards,The full statistics of the crowdsdale,
+									li.tabs-card__list__item
+										img(src='img/main-page/section-costs/cost-icon.png')
+										span Management and configuration of ICO
+									li.tabs-card__list__item
+										img(src='img/main-page/section-costs/cost-icon.png')
+										span Smart contact development is included
+									li.tabs-card__list__item
+										img(src='img/main-page/section-costs/cost-icon.png')
+										span 5 languages
+									li.tabs-card__list__item
+										img(src='img/main-page/section-costs/cost-icon.png')
+										span Deadline: 3-5 days
+
+								button.button-blue.button-blue--cost.bounceInLeft.animatable.extra-services-click() try demo
+
+						div.column--two-items.column--two-items-first-tab.bounceInRight.animatable
+							ul.tab-list
+								li.tab-list__item
+									img(src='img/main-page/section-costs/cost-icon1.png')
+									span Token smart-contract or/and Crowdale smart-contract token sale pro included;
+								li.tab-list__item
+									img(src='img/main-page/section-costs/cost-icon1.png')
+									span Token Payments with ETH;
+								li.tab-list__item
+									img(src='img/main-page/section-costs/cost-icon1.png')
+									span Manual token issuing (private pre-sale);
+								li.tab-list__item
+									img(src='img/main-page/section-costs/cost-icon1.png')
+									span Private Cabinet translated into the most commonly used international languages (Russian, English, German, French, Spanish, Portuguese, Japanese, Korean, Chinese);
+								li.tab-list__item
+									img(src='img/main-page/section-costs/cost-icon1.png')
+									span Referral program with a list of participants;
+								li.tab-list__item
+									img(src='img/main-page/section-costs/cost-icon1.png')
+									span History of all transactions (write into blockchaine, cabinet smart-contract);
+								li.tab-list__item
+									img(src='img/main-page/section-costs/cost-icon1.png')
+									span Token price calculator;
+								li.tab-list__item
+									img(src='img/main-page/section-costs/cost-icon1.png')
+									span Reverse counter (information about pre-sale bonus during each stage);
+
+								li.tab-list__item
+									img(src='img/main-page/section-costs/cost-icon1.png')
+									span Information about user’s balance;
+								li.tab-list__item
+									img(src='img/main-page/section-costs/cost-icon1.png')
+									span Information about token price. Binding the price of the token the rate of USD (every minute update)*;
+								li.tab-list__item
+									img(src='img/main-page/section-costs/cost-icon1.png')
+									span Bounty-program;
+								li.tab-list__item
+									img(src='img/main-page/section-costs/cost-icon1.png')
+									sapn Help and FAQs;
+								li.tab-list__item
+									img(src='img/main-page/section-costs/cost-icon1.png')
+									span Notifications;
+								li.tab-list__item
+									img(src='img/main-page/section-costs/cost-icon1.png')
+									span KYC (Know You Customer);
+								li.tab-list__item
+									img(src='img/main-page/section-costs/cost-icon1.png')
+									sapn Registration, authorization, password recovery;
+								li.tab-list__item
+									img(src='img/main-page/section-costs/cost-icon1.png')
+									span Links to social networks, passibility of registration using Social Login.
+								li.tab-list__item
+									img(src='img/main-page/section-costs/cost-icon1.png')
+									span -  only PC + token smart-contract.
+				div.tabcontent
+					div.container-inner.container-inner--first-tab
+						div.column--tree-items.column--two-items-first-tab.bounceInTop.animatable
+							div.tabs-card.extra-services-full
+								div.tabs-card__header.extra-services-full__header
+									span.extra-services-number 1 500
+									span.extra-services-val USD
+								div.extra-services-full__image
+									img(src='img/main-page/section-costs/extra-image.png')
+
+								div.tabs-card__title.extra-services-full__title Custom landing page
+								div.extra-services-full__description A fully adaptive landing page that will help you share your ICO idea with investors
+
+								a.button-blue.button-blue--cost-full.bounceInLeft.animatable.extra-services-click(href='#') CHOOSE
+
+						div.column--tree-items.column--two-items-first-tab.bounceInBottom.animatable
+							+extra-services-mini(200, 'translation', 'Translation of your landing page into the global languages of your choice')
+							+extra-services-mini(100, 'Proofreading', 'Proofreading of multilingual texts in the languages of your choice')
+							+extra-services-mini(100, 'mailing lists', 'Preparation and sending out of emails and push notifications')
+
+						div.column--tree-items.column--two-items-first-tab.bounceInTop.animatable
+							+extra-services-mini(300, 'smart-contracts', 'Help with setting up of smart-contracts for your ICO')
+							+extra-services-mini(150, 'CRM', 'Assistance with setting up of CRM to collect leads for pre-ICO')
+							+extra-services-mini(500,'White paper', 'Assistance with preparation and formatting of a white paper for your ICO')
+
+
+

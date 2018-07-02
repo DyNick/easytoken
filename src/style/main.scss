@@ -1,0 +1,22 @@
+@import "partials/reset";
+@import "partials/fonts";
+@import "partials/default";
+/*==================PLUGINS =================*/
+@import "partials/plugins/owl-carousel";
+@import "partials/plugins/owl-carousel-thems";
+/*====================MAIN PAGE===============*/
+@import "partials/main-page/_intro-section";
+@import "partials/main-page/_section-video";
+@import "partials/main-page/_section-dashboard";
+@import "partials/main-page/_section-scroll-first";
+@import "partials/main-page/_section-features";
+@import "partials/main-page/_section-costs";
+@import "partials/main-page/_section-scroll-second";
+/*===================FOOTER==================*/
+@import "partials/footer/footer";
+
+/*===================HEADER==================*/
+@import "partials/header/header";
+
+/*===================POPUPS==================*/
+@import "partials/main-page/popups";

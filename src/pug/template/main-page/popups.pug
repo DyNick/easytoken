@@ -1,0 +1,83 @@
+mixin popups()
+	.modal-call-back
+		.underlayer
+		.modal-inner
+			span.btn-close
+			h3 CALL BACK
+			//p
+				| Если хотите сотрудничать с нами, просто заполните форму, и мы
+				br
+				| с Вами свяжемся или перезвоните нам сейчас: 044 360 1696
+			.form
+				form(action='', method='post', onsubmit='')
+					label
+						input.form-control(required="" name="name" placeholder="NAME*" type="text")
+					label
+						input.form-control(required=""  name="phone" placeholder="PHONE*" type="tel" pattern="^[\+]?\d{8,12}$" )
+					label
+						input.form-control(required=""  name="email" placeholder="EMAIL*" type="email" pattern="[a-zA-Z0-9_]+(?:\.[A-Za-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?!([a-zA-Z0-9]*\.[a-zA-Z0-9]*\.[a-zA-Z0-9]*\.))(?:[A-Za-z0-9](?:[a-zA-Z0-9-]*[A-Za-z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?")
+					label
+						textarea.form-control(name='msg_text', required='', placeholder='YOUR MASSAGE')
+
+					a(href='#').submit-contact(type='') SUBMIT
+	// //.modal-inner
+	.modal-form-services
+		.underlayer
+		.modal-inner.modal-inner--services
+			span.btn-close.btn-close-services
+			.modal-inner--services__header
+				h3  services
+			//p
+				| Если хотите сотрудничать с нами, просто заполните форму, и мы
+				br
+				| с Вами свяжемся или перезвоните нам сейчас: 044 360 1696
+			.form.form--services
+				form(action='', method='post', onsubmit='')
+					.container-form
+						div.container-form__item
+							div.container-form__item__box
+								input#something7(type='checkbox' checked)
+								label.check-box(for='something7')
+							div.container-form__item__description All services
+
+						div.container-form__item
+							div.container-form__item__box
+								input#something(type='checkbox' )
+								label.check-box(for='something')
+							div.container-form__item__description Custom landing page
+						div.container-form__item
+							div.container-form__item__box
+								input#something1(type='checkbox')
+								label.check-box(for='something1')
+							div.container-form__item__description translation
+						div.container-form__item
+							div.container-form__item__box
+								input#something2(type='checkbox')
+								label.check-box(for='something2')
+							div.container-form__item__description smart-contracts
+						div.container-form__item
+							div.container-form__item__box
+								input#something3(type='checkbox')
+								label.check-box(for='something3')
+							div.container-form__item__description Proofreading
+						div.container-form__item
+							div.container-form__item__box
+								input#something4(type='checkbox')
+								label.check-box(for='something')
+							div.container-form__item__description CRM
+						div.container-form__item
+							div.container-form__item__box
+								input#something5(type='checkbox')
+								label.check-box(for='something5')
+							div.container-form__item__description mailing lists
+						div.container-form__item
+							div.container-form__item__box
+								input#something6(type='checkbox')
+								label.check-box(for='something6')
+							div.container-form__item__description White paper
+
+						label
+							input.form-control(required="" name="name" placeholder="NAME*" type="text")
+						label
+							input.form-control(required=""  name="email" placeholder="EMAIL*" type="email" pattern="[a-zA-Z0-9_]+(?:\.[A-Za-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?!([a-zA-Z0-9]*\.[a-zA-Z0-9]*\.[a-zA-Z0-9]*\.))(?:[A-Za-z0-9](?:[a-zA-Z0-9-]*[A-Za-z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?")
+					a.button-blue.button-blue--popup(href='') SUBMIT

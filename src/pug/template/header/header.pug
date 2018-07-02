@@ -1,0 +1,39 @@
+mixin header()
+	header.header
+		div.container
+			div.container-inner.container-inner--header
+				.menu-toggle
+					.one
+					.two
+					.three
+				img.logo(src='img/logo.png')
+				div.navigation
+					nav.navigation__continer
+						ul.navigation-list
+							li.navigation-list__item
+								a.navigation-list__item__link(href='#investor') INVESTOR’S Dashboard
+							//li.navigation-list__item
+								a.navigation-list__item__link(href='#administrator') ADMINISTRATOR’S Dashboard
+							li.navigation-list__item
+								a.navigation-list__item__link(href='#features') Dashboard FEATURES
+							li.navigation-list__item
+								a.navigation-list__item__link(href='#cost') COST
+							li.navigation-list__item
+								a.navigation-list__item__link(href='#footer') CONTACTS
+					//div.navigation__icons-block
+						a.navigation-icon(href='#')
+							i.fa.fa-search
+						a.navigation-icon(href='#')
+							i.fa.fa-bell
+
+					div.navigation__button-block
+						//a.button-navigation(href='#') CHOOSE
+						button.button-navigation.button-navigation--pink.extra-services-click() CHOOSE  SERVICES
+
+					//div.navigation__select-block
+						div.select-help
+							span HELP
+							span
+						div.select-lang
+							span RU
+							span
